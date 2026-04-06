@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hostal Encantos — Tu hogar lejos de casa en el corazón de Tacna. Habitaciones confortables, servicios premium y atención personalizada.">
+  <title>Hostal Encantos — Tacna, Perú</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c01e2e'/><text x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='16' fill='white'>HE</text></svg>">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__logo" aria-label="Hostal Encantos">
+        <svg class="nav__logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="42" height="42" rx="8" fill="#c01e2e"/>
+          <polygon points="21,7 35,18 35,36 7,36 7,18" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+          <text x="21" y="29" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="15" fill="white" letter-spacing="-0.5">HE</text>
+        </svg>
+        <div class="nav__logo-text">
+          <span class="nav__logo-name">Hostal Encantos</span>
+          <span class="nav__logo-tagline">Tacna, Perú</span>
+        </div>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#inicio"       class="nav__link">Inicio</a></li>
+        <li><a href="#habitaciones" class="nav__link">Habitaciones</a></li>
+        <li><a href="#servicios"    class="nav__link">Servicios</a></li>
+        <li><a href="#galeria"      class="nav__link">Galería</a></li>
+        <li><a href="#ubicacion"    class="nav__link">Ubicación</a></li>
+        <li><a href="#contacto"     class="nav__link">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="btn btn-primary nav__cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.79 19.79 19.79 0 011.07 4.18 2 2 0 013 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        Reservar
+      </a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<nav class="nav__mobile" id="mobileMenu" aria-label="Menú móvil">
+  <a href="#inicio"       class="nav__link">Inicio</a>
+  <a href="#habitaciones" class="nav__link">Habitaciones</a>
+  <a href="#servicios"    class="nav__link">Servicios</a>
+  <a href="#galeria"      class="nav__link">Galería</a>
+  <a href="#ubicacion"    class="nav__link">Ubicación</a>
+  <a href="#contacto"     class="nav__link">Contacto</a>
+  <a href="#contacto" class="btn btn-primary" style="margin-top:1rem;justify-content:center;">Reservar Ahora</a>
+</nav>
+
+<!-- HERO / CAROUSEL -->
+<section id="inicio" class="hero" aria-label="Portada principal">
+  <div class="carousel" role="region" aria-label="Imágenes del hostal">
+    <div id="carouselTrack">
+      <!-- Generado automáticamente por JS desde CAROUSEL_SLIDES en data.js -->
+    </div>
+    <button class="carousel__prev" id="prevBtn" aria-label="Slide anterior">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="carousel__next" id="nextBtn" aria-label="Siguiente slide">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="carousel__controls" id="carouselDots" aria-label="Indicadores"></div>
+  </div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section class="about" aria-label="Sobre nosotros">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__content fade-in">
+        <span class="section-label">Sobre Nosotros</span>
+        <h2 class="section-title">Un lugar donde<br><em>cada detalle importa</em></h2>
+        <p class="section-desc" style="margin-bottom:var(--space-4);">En Hostal Encantos combinamos la calidez de un ambiente hogareño con la comodidad y servicios de un establecimiento moderno. Desde nuestra apertura, nos hemos dedicado a ofrecer experiencias memorables a cada huésped.</p>
+        <p class="section-desc">Ubicados en en pleno Distrito de Gregorio Albarracín A solo 4 Minutos del Centro de Tacna, un lugar tranquilo y placentero para un grato descanso.</p>
+        <div class="about__stats">
+          <div><div class="about__stat-number">1000+</div><div class="about__stat-label">Huéspedes satisfechos</div></div>
+          <div><div class="about__stat-number">15</div><div class="about__stat-label">Habitaciones</div></div>
+          <div><div class="about__stat-number">4.5</div><div class="about__stat-label">Calificación</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HABITACIONES -->
+<section id="habitaciones" class="rooms" aria-label="Habitaciones">
+  <div class="container">
+    <header class="rooms__header fade-in">
+      <span class="section-label">Habitaciones</span>
+      <h2 class="section-title">Encuentra tu espacio ideal</h2>
+      <p class="section-desc">Cada habitación está diseñada para brindarte el máximo confort durante tu estadía.</p>
+    </header>
+    <div class="rooms__grid" id="roomsContainer" role="list">
+      <!-- Generado por JS desde ROOMS en data.js -->
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="services" aria-label="Servicios">
+  <div class="container">
+    <header class="services__header fade-in">
+      <span class="section-label">Nuestros Servicios</span>
+      <h2 class="section-title">Todo lo que necesitas</h2>
+      <p class="section-desc">Una amplia gama de servicios para hacer tu estadía lo más cómoda y agradable posible.</p>
+    </header>
+    <div class="services__grid" id="servicesContainer" role="list">
+      <!-- Generado por JS desde SERVICES en data.js -->
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria" class="gallery" aria-label="Galería">
+  <div class="container">
+    <header class="gallery__header fade-in">
+      <span class="section-label">Galería</span>
+      <h2 class="section-title">Conoce nuestros espacios</h2>
+      <p class="section-desc">Un vistazo a los ambientes que hacen especial al Hostal Encantos.</p>
+    </header>
+    <div class="gallery__grid" id="galleryContainer"></div>
+  </div>
+</section>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="lightbox__close" onclick="closeLightbox()" aria-label="Cerrar">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="" loading="lazy">
+</div>
+
+<!-- UBICACIÓN -->
+<section id="ubicacion" class="location" aria-label="Ubicación">
+  <div class="container">
+    <div class="location__grid">
+      <div class="location__info fade-in">
+        <span class="section-label">Ubicación</span>
+        <h2 class="section-title">Encuéntranos<br>en Tacna</h2>
+        <p class="section-desc">Estamos en una ubicación privilegiada, cerca de todo lo que necesitas.</p>
+        <div class="location__items">
+          <div class="location__item">
+            <div class="location__item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="location__item-title">Dirección</div><div class="location__item-value" data-hostal-address></div></div>
+          </div>
+          <div class="location__item">
+            <div class="location__item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.79a19.79 19.79 0 01-3-8.59A2 2 0 012 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div><div class="location__item-title">Teléfono</div><div class="location__item-value" data-hostal-phone></div></div>
+          </div>
+          <div class="location__item">
+            <div class="location__item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><div class="location__item-title">Check-in / Check-out</div><div class="location__item-value">Check-in: 14:00 h &nbsp;|&nbsp; Check-out: 12:00 h</div></div>
+          </div>
+          <div class="location__item">
+            <div class="location__item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><div class="location__item-title">Correo</div><div class="location__item-value" data-hostal-email></div></div>
+          </div>
+        </div>
+        <a href="#" data-maps class="btn btn-primary" style="margin-top:var(--space-8);" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ver en Google Maps
+        </a>
+      </div>
+      <div class="location__map fade-in">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d237.10925250463742!2d-70.2507264!3d-18.0368931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915acf9f0f2d57cd%3A0x1f3fccd3ab827171!2sHostal%20Encantos%20Tacna!5e0!3m2!1ses-419!2spe!4v1775447585986!5m2!1ses-419!2spe"
+            width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        <!--
+          Para Google Maps real, reemplaza .map-placeholder con:
+          <iframe src="https://www.google.com/maps/embed?pb=TU_EMBED_URL"
+            width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contact" aria-label="Contacto y reservas">
+  <div class="container">
+    <div class="contact__grid">
+      <div class="contact__info fade-in">
+        <span class="section-label">Contacto</span>
+        <h2 class="section-title">Estamos listos<br>para atenderte</h2>
+        <p class="section-desc">Comunícate a través de tu canal preferido. Respondemos de inmediato para hacer tu reserva o resolver cualquier consulta.</p>
+        <div class="contact__channels">
+
+          <!-- WhatsApp -->
+          <a href="#" data-channel="whatsapp" class="contact-channel contact-channel--whatsapp" target="_blank" rel="noopener noreferrer">
+            <div class="contact-channel__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel__label">WhatsApp</div>
+              <div class="contact-channel__value" data-hostal-phone></div>
+            </div>
+            <svg class="contact-channel__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+
+          <!-- Llamada -->
+          <a href="#" data-channel="call" class="contact-channel contact-channel--call">
+            <div class="contact-channel__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.79a19.79 19.79 0 01-3-8.59A2 2 0 012 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel__label">Llamada directa</div>
+              <div class="contact-channel__value" data-hostal-phone></div>
+            </div>
+            <svg class="contact-channel__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+
+          <!-- Facebook -->
+          <a href="#" data-channel="facebook" class="contact-channel contact-channel--facebook" target="_blank" rel="noopener noreferrer">
+            <div class="contact-channel__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel__label">Facebook</div>
+              <div class="contact-channel__value">Hostal Encantos</div>
+            </div>
+            <svg class="contact-channel__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- FORMULARIO -->
+      <div class="contact__form-wrap fade-in">
+        <h3 class="form-title">Envíanos un mensaje</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="inputName">Nombre completo</label>
+              <input class="form-input" type="text" id="inputName" name="name" placeholder="Tu nombre" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inputPhone">Teléfono</label>
+              <input class="form-input" type="tel" id="inputPhone" name="phone" placeholder="+51 9XX XXX XXX" autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="inputEmail">Correo electrónico</label>
+            <input class="form-input" type="email" id="inputEmail" name="email" placeholder="correo@ejemplo.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="inputCheckin">Fecha de llegada</label>
+            <input class="form-input" type="date" id="inputCheckin" name="checkin">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="inputMessage">Mensaje o consulta</label>
+            <textarea class="form-textarea" id="inputMessage" name="message" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Enviar por WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div style="display:flex;align-items:center;gap:var(--space-3);">
+          <svg width="36" height="36" viewBox="0 0 42 42" fill="none">
+            <rect width="42" height="42" rx="8" fill="#c01e2e"/>
+            <polygon points="21,7 35,18 35,36 7,36 7,18" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+            <text x="21" y="29" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="15" fill="white" letter-spacing="-0.5">HE</text>
+          </svg>
+          <span class="footer__brand-name">Hostal Encantos</span>
+        </div>
+        <p class="footer__brand-desc">Donde cada estadía se convierte en un recuerdo inolvidable. Tu hogar lejos de casa en el corazón de Tacna.</p>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Navegación</h4>
+        <ul class="footer__links" role="list">
+          <li><a href="#inicio"       class="footer__link">Inicio</a></li>
+          <li><a href="#habitaciones" class="footer__link">Habitaciones</a></li>
+          <li><a href="#servicios"    class="footer__link">Servicios</a></li>
+          <li><a href="#galeria"      class="footer__link">Galería</a></li>
+          <li><a href="#ubicacion"    class="footer__link">Ubicación</a></li>
+          <li><a href="#contacto"     class="footer__link">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Contacto</h4>
+        <ul class="footer__links" role="list">
+          <li><a href="#" data-channel="call" class="footer__link" style="display:flex;align-items:center;gap:var(--space-2);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.79a19.79 19.79 0 01-3-8.59A2 2 0 012 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span data-hostal-phone></span>
+          </a></li>
+          <li><span class="footer__link" style="display:flex;align-items:center;gap:var(--space-2);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span data-hostal-email></span>
+          </span></li>
+          <li><span class="footer__link" style="display:flex;align-items:flex-start;gap:var(--space-2);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:2px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-hostal-address></span>
+          </span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 <span>Hostal Encantos</span>. Todos los derechos reservados.</p>
+      <p class="footer__copy">Hecho con <span>♥</span> en Tacna, Perú</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/js/data.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
